@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadanie5</title>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <!--Box 2:1 Panel Parent Entity-->
+            <a-box color="red"
+                   side="double"
+                   width="4"
+                   height="2"
+                   depth="0.2"
+                   position="0 1 -7"
+                   rotation="90 0 0"
+                   scale="-1 1 2">
+                   <!--Circle Child Entity-->
+                   <a-circle color="green"
+                             side="double"
+                             position="2 0 0"
+                             rotation="90 0 0">
+                    </a-circle>
+            </a-box>
+            <!--Blue Circle-->
+            <a-circle color="blue"
+                      side="double"
+                      position="-2 1 -8"
+                      scale="2 2 1">
+            </a-circle>         
+
+            <!--Cylinder-->
+            <a-cylinder color="black"
+                        height="2"
+                        radius="2"
+                        segments-radial="6"
+                        open-ended="true"
+                        side="double"
+                        position="0 1 0"
+                        rotation="0 -90 90"
+                        scale="2 2 2">
+            </a-cylinder>
+        </a-scene>
+    </body>
+</html>
