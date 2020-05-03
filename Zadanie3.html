@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praca Inżynierska</title>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <!--Box 16:9 Panel Parent Entity-->
+            <a-box color="red"
+                   width="8"
+                   height="4.5"
+                   depth="0.2"
+                   position="0 4 -8">
+                   <!--Circle Child Entity-->
+                   <a-circle color="green"
+                             side="double"
+                             position="2 0 0.11">
+                    </a-circle>
+            </a-box>
+            <!--Blue Circle-->
+            <a-circle color="blue"
+                side="double"
+                position="-2 3 -6.89">
+            </a-circle>         
+            
+            <!--Cylinder-->
+            <a-cylinder color="black"
+                        height="2"
+                        radius="2"
+                        segments-radial="6"
+                        open-ended="true"
+                        side="double">
+            </a-cylinder>
+        </a-scene>
+    </body>
+</html>
