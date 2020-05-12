@@ -14,19 +14,46 @@
             <!--Black Box-->
             <a-box 
                    src="#cegla"
+                   repeat="1 1"
+                   normal-texture-repeat="1 1"
+                   normal-scale="1 -1"
+                   roughness="0.5"
                    width="4"
                    height="4"
                    depth="4"
-                   position="-2 1.5 -9">
+                   position="-2 1.5 -9"
+                   scale="-1 1 1">
             </a-box>
             <!--Blue Box-->
             <a-box
                     src="#drewno"
+                    repeat="2 2"
+                    normal-texture-repeat="2 2"
+                    normal-scale="1 -1"
+                    roughness="0.9"
                     width="4"
                     height="4"
                     depth="4"
-                    position="2 1.5 -9">
-            </a-box>   
+                    position="2 1.5 -9"
+                    scale="-1 1 1">
+            </a-box>
+            
+            <!--Green Sphere-->
+            <a-sphere
+                material="color: green;
+                          roughness: 0.2;
+                          shader: stanard"
+                radius="0.5"
+                position="-2 1.5 -9">
+            </a-sphere>
+            <!--Blue Sphere-->
+            <a-sphere
+                material="color: Blue;
+                          roughness: 0.2;
+                          shader: flat"
+                radius="0.5"
+                position="2 1.5 -9">
+            <a/sphere>
         </a-scene>
     </body>
 </html>
