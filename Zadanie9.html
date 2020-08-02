@@ -8,7 +8,12 @@
         <a-scene>
             <a-assets>
                 <img id="floor" src="tekstury/floor.jpg">
+                <img id="sky" src="tekstury/sky.jpg">
             </a-assets>
+
+            <a-sky src="#sky">
+            </a-sky>
+            
             <a-plane material="color:red; src:#floor; repeat: 5 5"
                      rotation="-90 0 0"
                      scale="10 10 1">
