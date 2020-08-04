@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loading and displaying 3D models</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="sky" src="tekstury/sky_bezchmur.jpg">
+                <a-asset-item id="miasto" src="tekstury/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-sky src="#sky">
+            </a-sky>
+
+            <!--Camera-->
+            <a-entity position="-3 0 50">
+                <a-camera></a-camera>
+            </a-entity>
+            <!--Miasto-->
+            <a-entity gltf-model="#miasto"></a-entity>
+ 
+        </a-scene>
+    </body>
+</html>
