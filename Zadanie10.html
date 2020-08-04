@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Camera Primitive</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="floor" src="tekstury/floor.jpg">
+                <img id="sky" src="tekstury/sky1.jpg">
+            </a-assets>
+        <!--Ground-->
+        <a-plane 
+        src="#floor" shader="flat" rotation="-90 0 0" scale="5 5 1">
+        </a-plane>  
+        <!--Cylinder-->
+        <a-cylinder
+        color="black" radius="0.5" height="2" position="0 0 -2">
+        </a-cylinder>
+        
+        </a-scene>
+    </body>
+</html>
